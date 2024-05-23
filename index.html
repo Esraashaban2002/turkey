@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wecome To Turkey</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="bg-light">
+
+  <header> <!-- header -->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white  fixed-top " style="height: 80px;">
+      <div class="container ">
+        <!-- logo -->
+        <a class="navbar-brand fs-4" href="#">
+          <img src="images/pngegg.png" alt="Logo" class="rounded-circle " height="80px" width="65px">
+        </a>
+        <a class="navbar-brand text-info m-3 pe-2 border-end " href="#">
+          <h2 class="text-info"><span class="text-danger">T</span>ur<span class="text-danger">k</span>ey</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navbar-collapse -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+            <li class="nav-item ">
+              <a class="nav-link active text-info h4" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info h4" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <button type="button"
+                class="nav-link dropdown-toggle text-info border-2 border-info rounded-3 btn btn-trips"
+                id="nav-Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="text">T</span>rips</button>
+              <ul class="dropdown-menu nav-list" aria-labelledby="nav-Dropdown">
+                <li><a class="dropdown-item text-primary" href="#">Istanbul</a></li>
+                <li><a class="dropdown-item text-primary" href="#">Ankara</a></li>
+                <hr class="dropdown-divider bg-info">
+                <li><a class="dropdown-item text-primary" href="#">Izmir</a></li>
+                <li><a class="dropdown-item text-primary" href="#">Bursa</a></li>
+                <li><a class="dropdown-item text-primary" href="#">Adana</a></li>
+                <li><a class="dropdown-item text-primary" href="#">Antalya</a></li>
+                <li><a class="dropdown-item text-primary" href="#">MORE....</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-info h4" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info h4" href="#">Team</a>
+            </li>
+          </ul>
+
+          <form class="d-flex me-5">
+            <input class="form-control border-3 border-info rounded-3 me-2" type="search" placeholder="Search"
+              aria-label="Search">
+            <button class="btn btn bg-info text-white me-3 border-3 border-info rounded-3 shadow-lg"
+              type="submit">Search</button>
+            <button class="btn btn bg-info text-white border-3 border-info rounded-3 shadow-lg" type="button"
+              data-bs-toggle="modal" data-bs-target="#myModal">Login</button>
+          </form> <!-- /form -->
+        </div> <!-- /navbar-collapse -->
+
+      </div>
+    </nav>
+    <!-- /navbar -->
+
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header bg-primary text-white">
+            <h4 class="modal-title">Login</h4>
+            <button type="button" class="btn-close bg-info" data-bs-dismiss="modal"></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <form action="index.html">
+              <div class="mb-3 mt-3">
+                <label for="email" class="form-label text-info h4">Email address</label>
+                <input type="email" class="form-control border-info" id="email" name="email" required>
+                <span>We'll never share your email with anyone else.</span>
+              </div>
+              <div class="mb-3">
+                <label for="pwd" class="form-label text-info h4">Password</label>
+                <input type="password" class="form-control border-info" id="pwd" name="pswd" required>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+                <label class="form-check-label text-info" for="mySwitch">Remember me</label>
+              </div>
+            </form>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer d-flex justify-content-between">
+            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Login</button>
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+      </div>
+    </div> <!-- modal -->
+  </header>
+
+  <aside>
+    <div class="container-fluid p-0 " style="position: relative;">
+      <div class="d-flex flex-column justify-content-between ms-auto pe-3 fixed "
+        style="position: fixed;z-index: 90;top: 200px;right:20px;">
+        <div class="aside-icon  mt-3 ">
+          <a href="https://www.facebook.com/fatma.elzhraa.927543?mibextid=ZbWKwL" target="_blank"
+            class="h1 text-primary"><i class="fa-brands fa-facebook "></i></a>
+        </div>
+        <div class="aside-icon  mt-3 ">
+          <a href="https://www.whatsapp.com" target="_blank" class="h1 text-success"><i
+              class="fa-brands fa-whatsapp "></i></a>
+        </div>
+        <div class="aside-icon  mt-3">
+          <a href="https://www.twitter.com" target="_blank" class="h1 text-info"><i
+              class="fa-brands fa-twitter "></i></a>
+        </div>
+        <div class="aside-icon  mt-3">
+          <a href="https://www.instagram.com" target="_blank" class="h1 text-danger"><i
+              class="fa-brands fa-instagram "></i></a>
+        </div>
+        <div class="aside-icon mt-3 ">
+          <a href="https://www.linkedin.com" target="_blank" class="h1 text-primary"><i
+              class="fa-brands fa-linkedin "></i></a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <div class="d-flex flex-column justify-content-between ms-auto" style="position: fixed;z-index: 90;top: 200px;right:20px;">
+      <div class="aside-icon "><a href="#"><i class="fab fa-facebook-square"></i></a></div>
+      <div class="aside-icon "><a href="#"><i class="fab fa-whatsapp-square"></i></a></div>
+      <div class="aside-icon "><a href="#"><i class="fab fa-twitter-square"></i></a></div>
+      <div class="aside-icon "><a href="#"><i class="fab fa-linkedin"></i></a></div>
+      <div class="aside-icon "><a href="#"><i class="fab fa-instagram-square"></i></a></div>
+    </div> -->
+
+
+
+  </aside>
+
+  <main>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+      </div> <!-- carousel-indicators -->
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="bg-image" style="background-image: url(../images/Istanbul.jpg);">
+            <div class="carousel-caption sec-bg ">
+              <h3>Istanbul</h3>
+              <p>Enchanting Istanbul: Where East Meets West</p>
+              <button class="btn btn-primary">visit us</button>
+            </div>
+          </div>
+        </div> <!-- carousel-item  -->
+
+        <div class="carousel-item">
+          <div class="bg-image" style="background-image: url(../images/Ankara.jpeg);">
+            <div class="carousel-caption sec-bg ">
+              <h3>Ankara</h3>
+              <p>A captivating blend of ancient and modern, Ankara awaits.</p>
+              <button class="btn btn-primary">visit us</button>
+            </div>
+          </div>
+        </div> <!-- carousel-item  -->
+
+        <div class="carousel-item">
+          <div class="bg-image" style="background-image: url(../images/Izmir.jpeg);">
+            <div class="carousel-caption sec-bg ">
+              <h3>Izmir</h3>
+              <p>Sparkling Izmir, where history meets the Aegean breeze. </p>
+              <button class="btn btn-primary">visit us</button>
+            </div>
+          </div>
+        </div> <!-- carousel-item  -->
+
+        <div class="carousel-item">
+          <div class="bg-image" style="background-image: url(../images/bursa.jpg);">
+            <div class="carousel-caption sec-bg ">
+              <h3>Bursa</h3>
+              <p>Immerse yourself in Bursa's rich history and stunning architecture.</p>
+              <button class="btn btn-primary">visit us</button>
+            </div>
+          </div>
+        </div> <!-- carousel-item  -->
+
+        <div class="carousel-item">
+          <div class="bg-image" style="background-image: url(../images/Adana.jpeg);">
+            <div class="carousel-caption sec-bg ">
+              <h3>Adana</h3>
+              <p>Adana beckons with its historic charm and mouthwatering cuisine</p>
+              <button class="btn btn-primary">visit us</button>
+            </div>
+          </div>
+        </div> <!-- carousel-item  -->
+
+        <div class="carousel-item">
+          <div class="bg-image" style="background-image: url(../images/card-Ankara.jpg);">
+            <div class="carousel-caption sec-bg ">
+              <h3>Antalya</h3>
+              <p>Antalya boasts stunning beaches, dramatic cliffs, and a rich historical heritage</p>
+              <button class="btn btn-primary">visit us</button>
+            </div>
+          </div>
+        </div> <!-- carousel-item  -->
+
+      </div> <!-- carousel-inner  -->
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon "></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+  </main>
+
+  <section class="all-cards">
+
+    <div class="card p-3  text-white bg-info">
+      <div class="card-body">
+        <h2 class="card-title title" style="color: rgb(166, 88, 238);">Welcome</h2>
+        <p class="card-text h5">Are you planning to visit Turkey? If you are looking for a great place to visit in
+          Turkey,
+          Izmir is definitely worth considering</p>
+        <a href="#" class="btn btn-light text-info  btn-lg m-auto">Learn more</a>
+      </div>
+    </div> <!-- card -->
+    <hr>
+
+    <div class="p-4 text-center" style="background-color: rgb(3, 110, 143);">
+      <strong class="h2  text-white">Popular destinations in Turkey</strong>
+    </div>
+    <div id="accordion">
+
+      <div class="card mt-2">
+        <div class="card-header shadow ">
+          <a class="collapsed btn w-100 text-start" data-bs-toggle="collapse" href="#collapseOne">
+            Hagia Sophia
+          </a>
+        </div>
+        <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body shadow">
+            Hagia Sophia is a former Byzantine church, later Ottoman mosque and now museum in Istanbul. It is one of the
+            most famous buildings in the world and is considered to be a masterpiece of Byzantine architecture.
+          </div>
+        </div>
+      </div> <!-- card -->
+
+      <div class="card">
+        <div class="card-header shadow">
+          <a class="collapsed btn w-100 text-start" data-bs-toggle="collapse" href="#collapseTwo">
+            Mount Ararat
+          </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body shadow">
+            Mount Ararat is a large dormant volcano in eastern Turkey. It is the highest mountain in Turkey and is
+            traditionally considered to be the landing place of Noah's Ark.
+          </div>
+        </div>
+      </div> <!-- card -->
+
+      <div class="card">
+        <div class="card-header shadow">
+          <a class="collapsed btn w-100 text-start" data-bs-toggle="collapse" href="#collapseThree">
+            Agora of Smyrna
+          </a>
+        </div>
+        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body shadow">
+            Visit the Agora of Smyrna, an ancient Greek marketplace that has been excavated and restored.
+          </div>
+        </div>
+      </div> <!-- card -->
+
+    </div>
+
+    <div class="p-4 text-center" style="background-color: rgb(3, 110, 143);">
+      <strong class="h2  text-white">Translate From Arabic To Turkish</strong>
+    </div>
+
+    <div class="bg-info p-5">
+      <h3 class="text-white "> Write and translate<span style="color: rgb(3, 110, 143);">Press Here</span> </h3>
+      <button type="button" class="btn btn-light text-info" data-bs-toggle="modal" data-bs-target="#copy"
+        data-bs-toggle="tooltip" title="copy to clipboard">copy</button>
+      <!-- The Modal -->
+      <div class="modal" id="copy">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <div class="modal-body">
+              <h6>esraashaban2002.github.io says</h6>
+              <p>تم نسخ النص.. </p>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <textarea class="form-control mt-2" rows="4" name="text" placeholder="translate:"></textarea>
+    </div>
+    <hr>
+
+    <div class="p-4 text-center" style="background-color: rgb(3, 110, 143);">
+      <strong class="h2  text-white">Translate From Arabic To English</strong>
+    </div>
+
+    <div class="bg-info p-5">
+      <h3 class="text-white "> Write and translate<span style="color: rgb(3, 110, 143);">Press Here</span> </h3>
+      <button type="button" class="btn btn-light text-info" data-bs-toggle="modal" data-bs-target="#copy"
+        data-bs-toggle="tooltip" title="copy to clipboard">copy</button>
+      <!-- The Modal -->
+      <div class="modal" id="copy">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <div class="modal-body">
+              <h6>esraashaban2002.github.io says</h6>
+              <p>تم نسخ النص.. </p>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <textarea class="form-control mt-2" rows="4" name="text" placeholder="translate:"></textarea>
+    </div>
+    <hr>
+
+    <div class="p-4 text-center" style="background-color: rgb(3, 110, 143);">
+      <strong class="h2  text-white">Translate From Arabic To French</strong>
+    </div>
+
+    <div class="bg-info p-5">
+      <h3 class="text-white "> Write and translate<span style="color: rgb(3, 110, 143);">Press Here</span> </h3>
+      <button type="button" class="btn btn-light text-info" data-bs-toggle="modal" data-bs-target="#copy"
+        data-bs-toggle="tooltip" title="copy to clipboard">copy</button>
+      <!-- The Modal -->
+      <div class="modal" id="copy">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <div class="modal-body">
+              <h6>esraashaban2002.github.io says</h6>
+              <p>تم نسخ النص.. </p>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <textarea class="form-control mt-2" rows="4" name="text" placeholder="translate:"></textarea>
+    </div>
+    <hr>
+
+  </section> <!-- cards  -->
+
+  <section class="overly">
+    <div class="image" style="background-image: url(../images/turkey.jpg);">
+      <div class="image-overly"></div>
+    </div>
+
+    <div class="p-4 text-center" style="background-color: rgb(3, 110, 143);">
+      <strong class="h2  text-white">Popular destinations in Turkey</strong>
+    </div>
+  </section> <!-- overly -->
+
+  <section class="DESTINATIONS ">
+    <div class="container">
+      <div class="row  mt-5 justify-content-between">
+
+        <div class="card col-lg-3 col-8 mx-lg-2  mx-auto my-lg-2 my-5 cards shadow" style="width:350px">
+          <img class="card-img-top p-2" src="images/card-Istanbul.jpg" alt="Card image" style=" height: 400px;">
+          <div class="card-body row d-flex justify-content-between">
+            <div class="col-6">
+              <h4 class="card-title text-primary">Istanbul</h4>
+              <p class="card-text">A captivating blend of ancient and modern </p>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-primary">Kwon More</button>
+            </div>
+          </div>
+        </div> <!-- card 1-->
+
+        <div class="card col-lg-3 col-8 mx-lg-2  mx-auto my-lg-2 my-5 cards shadow" style="width:350px">
+          <img class="card-img-top p-2" src="images/card-bursa-1.jpg" alt="Card image" style=" height: 400px;">
+          <div class="card-body row d-flex justify-content-between">
+            <div class="col-6">
+              <h4 class="card-title text-primary">Cappadocia</h4>
+              <p class="card-text">Balloons & rock formations - Fairytale landscape</p>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-primary">Kwon More</button>
+            </div>
+          </div>
+        </div> <!-- card 2-->
+
+        <div class="card col-lg-3 col-8 mx-lg-2  mx-auto my-lg-2 my-5 cards shadow" style="width:350px">
+          <img class="card-img-top p-2" src="images/card-Antalya.jpg" alt="Card image" style=" height: 400px;">
+          <div class="card-body row d-flex justify-content-between">
+            <div class="col-6">
+              <h4 class="card-title text-primary">Antalya</h4>
+              <p class="card-text">Beaches & Roman ruins - Relax by the sea</p>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-primary">Kwon More</button>
+            </div>
+          </div>
+        </div> <!-- card 3-->
+
+        <div class="card col-lg-3 col-8 mx-lg-2  mx-auto my-lg-2 my-5 cards shadow" style="width:350px">
+          <img class="card-img-top p-2" src="images/card-Bodrum.jpg" alt="Card image" style=" height: 400px;">
+          <div class="card-body row d-flex justify-content-between">
+            <div class="col-6">
+              <h4 class="card-title text-primary">Bodrum</h4>
+              <p class="card-text">Mausoleum & nightlife - Beaches with history </p>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-primary">Kwon More</button>
+            </div>
+          </div>
+        </div> <!-- card 4-->
+
+        <div class="card col-lg-3 col-8 mx-lg-2  mx-auto my-lg-2 my-5 cards shadow" style="width:350px">
+          <img class="card-img-top p-2" src="images/card-Pamukkale.jpg" alt="Card image" style=" height: 400px;">
+          <div class="card-body row d-flex justify-content-between">
+            <div class="col-6">
+              <h4 class="card-title text-primary">Pamukkale</h4>
+              <p class="card-text">Cotton castle & Hierapolis - Natural pools & ruins</p>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-primary">Kwon More</button>
+            </div>
+          </div>
+        </div> <!-- card 5-->
+
+        <div class="card col-lg-3 col-8 mx-lg-2  mx-auto my-lg-2 my-5 cards shadow" style="width:350px">
+          <img class="card-img-top p-2" src="images/card-Ankara.jpg" alt="Card image" style="height: 400px;">
+          <div class="card-body row d-flex justify-content-between">
+            <div class="col-6">
+              <h4 class="card-title text-primary">Ankara</h4>
+              <p class="card-text">Atatürk's mausoleum & museums - Capital city history.</p>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-primary">Kwon More</button>
+            </div>
+          </div>
+        </div> <!-- card 6-->
+
+        <div class="card col-lg-3 col-8 mx-lg-2  mx-auto my-lg-2 my-5 cards shadow" style="width:350px">
+          <img class="card-img-top p-2" src="images/card-Izmir.jpg" alt="Card image" style="height: 400px;">
+          <div class="card-body row d-flex justify-content-between">
+            <div class="col-6">
+              <h4 class="card-title text-primary">Izmir</h4>
+              <p class="card-text">Agora & Aegean breeze - Ancient market by the sea</p>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-primary">Kwon More</button>
+            </div>
+          </div>
+        </div> <!-- card 7-->
+
+        <div class="card col-lg-3 col-8 mx-lg-2  mx-auto my-lg-2 my-5 cards shadow" style="width:350px">
+          <img class="card-img-top p-2" src="images/card-marmaris.jpg" alt="Card image" style="height: 400px;">
+          <div class="card-body row d-flex justify-content-between">
+            <div class="col-6">
+              <h4 class="card-title text-primary">Marmaris</h4>
+              <p class="card-text">Turquoise waters & forests - Relax on the Riviera</p>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-primary">Kwon More</button>
+            </div>
+          </div>
+        </div> <!-- card 8-->
+
+      </div>
+    </div>
+  </section> <!-- DESTINATIONS  -->
+
+  <section class="overly">
+    <div class="image" style="background-image: url(../images/turkey2.jpg);">
+      <div class="image-overly"></div>
+    </div>
+  </section> <!-- overly -->
+
+  <section class="team">
+
+    <div class="p-4 text-center" style="background-color: rgb(3, 110, 143);">
+      <strong class="h2  text-white">Thanks For</strong>
+    </div>
+
+    <div class="container  mt-lg-3 mt-5 mx-auto">
+      <div class="row ">
+
+       
+          <div class="card card-hover  col-lg-4 col-7 mb-4 mx-lg-3  mx-auto my-lg-2 my-5"
+            style="width: 400px; border-radius: 25px;">
+            <img class="card-img-top" src="images/OIP.jpeg" alt="Card image" style=" border-radius: 25px; ">
+            <div class="card-img-overlay text-white rounded-5 d-flex flex-column justify-content-between"
+              style=" border-radius: 25px; ">
+              <div class="card-hover-cont my-lg-0 my-auto">
+                <p>All thanks and appreciation</p>
+                <span>&copy; may 13 2024</span>
+              </div>
+
+              <div class="my-lg-0 my-auto">
+                <a class="navbar-brand" href="#">
+                  <img src="images/OIP.jpeg" alt="Avatar Logo" style="width:100px;"
+                    class="rounded-circle w-lg-100 w-25">
+                </a>
+                <h4 class="card-title">Eg.Esraa Shaban </h4>
+                <p class="card-text">Full Stack Develoer </p>
+              </div>
+            </div>
+        </div> <!-- card -->
+
+          <div class="card card-hover  col-lg-4 col-7 mb-4 mx-lg-3  mx-auto my-lg-2 my-5"
+            style="width: 400px; border-radius: 25px;">
+            <img class="card-img-top" src="images/zizo.jpg" alt="Card image" style=" border-radius: 25px; ">
+            <div class="card-img-overlay text-white rounded-5 d-flex flex-column justify-content-between"
+              style=" border-radius: 25px; ">
+              <div class="card-hover-cont my-lg-0 my-auto">
+                <p>All thanks and appreciation</p>
+                <span>&copy; may 13 2024</span>
+              </div>
+
+              <div class="my-lg-0 my-auto">
+                <a class="navbar-brand" href="#">
+                  <img src="images/zizo.jpg" alt="Avatar Logo" style="width:100px;"
+                    class="rounded-circle w-lg-100 w-25">
+                </a>
+                <h4 class="card-title">Eg.Islam Mohammed</h4>
+                <p class="card-text">Web Develoer </p>
+              </div>
+            </div>
+          
+        </div> <!-- card -->
+
+          <div class="card card-hover  col-lg-4 col-7 mb-4 mx-lg-3  mx-auto my-lg-2 my-5"
+            style="width:400px; border-radius: 25px; ">
+            <img class="card-img-top" src="images/OIP.jpeg" alt="Card image" style=" border-radius: 25px; ">
+            <div class="card-img-overlay text-white rounded-5 d-flex flex-column justify-content-between"
+              style=" border-radius: 25px; ">
+              <div class="card-hover-cont my-lg-0 my-auto">
+                <p>All thanks and appreciation</p>
+                <span>&copy; may 13 2024</span>
+              </div>
+
+              <div class="my-lg-0 my-auto">
+                <a class="navbar-brand" href="#">
+                  <img src="images/OIP.jpeg" alt="Avatar Logo" style="width:100px;" class="rounded-circle">
+                </a>
+                <h4 class="card-title">Eg.Esraa Shaban </h4>
+                <p class="card-text">Front-End Develoer </p>
+              </div>
+            </div>
+        </div> <!-- card -->
+
+      </div>
+    </div>
+  </section> <!-- team -->
+
+  <section class="all-News mt-5 border-top">
+
+    <div class="h1 text-center text-primary mt-5 ">Turkey NEWS</div>
+
+    <div class="container">
+
+      <div class="card News d-flex shadow-lg my-5 ">
+        <div class="row ">
+          <div class="news-image  col-lg-3 col-12 ">
+            <img src="images/news-1.jpg" alt="" class="col-12" height="100%">
+          </div>
+
+          <div class="m-5   col-lg-8 col-10">
+            <h2 class="text-info">New Sleeper Train Route Takes Travelers Across Turkey</h2>
+            <div class="">
+              <i class="fa fa-calendar-alt me-1"></i> April 17th 2023
+            </div>
+            <div class="News_line bg-primary my-2"></div>
+            <div class="">Turkey has launched a new sleeper train route, allowing tourists to travel 1,051 kilometers
+              (653 miles) over 24 hours from Ankara to Diyarbakir. The route includes stops in several cities, giving
+              travelers a chance to explore different destinations.
+            </div>
+            <ul class="nav text-white row mt-5">
+              <li class="nav-item mx-2 bg-primary rounded-3 col-lg-2 col-6 my-2"><a href="#"
+                  class="text-white nav-link"><i class="fa fa-tag  text-white p-1"></i>Podcast</a></li>
+              <li class=" nav-item mx-2 bg-primary rounded-3 col-lg-2 col-6 my-2"><a href="#"
+                  class="text-white nav-link"><i class="fa fa-clock text-white p-1"></i>55 mins. </a></li>
+              <li class="nav-item mx-2 bg-primary rounded-3 col-lg-3 col-7 my-2 ">
+                <a href="#" class="text-white nav-link"><i class="fa fa-play text-white p-1"></i>Play Episode</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- card -->
+
+      <div class="card News d-flex shadow-lg my-5 ">
+        <div class="row ">
+          <div class="m-5   col-lg-8 col-10">
+            <h2 class="text-info">Fresh Travel Advice for Turkey Issued</h2>
+            <div class="">
+              <i class="fa fa-calendar-alt me-1"></i> june 14th 2021
+            </div>
+            <div class="News_line bg-primary my-2"></div>
+            <div class="">The Foreign, Commonwealth & Development Office (FCDO) has updated its travel advice for
+              Turkey. While some areas are perfectly safe for tourists, the FCDO advises against travel to Sirnak city,
+              Hakkari Province, and anywhere along the border with Syria due to security concerns
+            </div>
+            <ul class="nav text-white row mt-5">
+              <li class="nav-item mx-2 bg-primary rounded-3 col-lg-2 col-6 my-2"><a href="#"
+                  class="text-white nav-link"><i class="fa fa-tag  text-white p-1"></i>Podcast</a></li>
+              <li class=" nav-item mx-2 bg-primary rounded-3 col-lg-2 col-6 my-2"><a href="#"
+                  class="text-white nav-link"><i class="fa fa-clock text-white p-1"></i>55 mins. </a></li>
+              <li class="nav-item mx-2 bg-primary rounded-3 col-lg-3 col-7 my-2 ">
+                <a href="#" class="text-white nav-link"><i class="fa fa-play text-white p-1"></i>Play Episode</a>
+              </li>
+            </ul>
+          </div>
+          <div class="news-image  col-lg-3 col-12">
+            <img src="images/news-2.jpg" alt="" class="col-12" height="100%">
+          </div>
+        </div>
+      </div>
+      <!-- card -->
+
+      <div class="card News d-flex shadow-lg my-5 ">
+        <div class="row ">
+          <div class="news-image  col-lg-3 col-12 ">
+            <img src="images/news-3.jpg" alt="" class="col-12" height="100%">
+          </div>
+
+          <div class="m-5   col-lg-8 col-10">
+            <h2 class="text-info">Turkey Tourism on the Rise</h2>
+            <div class="">
+              <i class="fa fa-calendar-alt me-1"></i> February 2th 2024
+            </div>
+            <div class="News_line bg-primary my-2"></div>
+            <div class="">Despite some regional security concerns, tourist arrivals in Turkey are on the rise. The
+              country is expected to see a significant increase in visitors this year, with many travelers drawn to its
+              beautiful beaches, rich history, and delicious cuisine
+            </div>
+            <ul class="nav text-white row mt-5">
+              <li class="nav-item mx-2 bg-primary rounded-3 col-lg-2 col-6 my-2"><a href="#"
+                  class="text-white nav-link"><i class="fa fa-tag  text-white p-1"></i>Podcast</a></li>
+              <li class=" nav-item mx-2 bg-primary rounded-3 col-lg-2 col-6 my-2"><a href="#"
+                  class="text-white nav-link"><i class="fa fa-clock text-white p-1"></i>55 mins. </a></li>
+              <li class="nav-item mx-2 bg-primary rounded-3 col-lg-3 col-7 my-2 ">
+                <a href="#" class="text-white nav-link"><i class="fa fa-play text-white p-1"></i>Play Episode</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- card -->
+
+      <div class="card News d-flex shadow-lg my-5 ">
+        <div class="row ">
+          <div class="m-5   col-lg-8 col-10">
+            <h2 class="text-info">Ancient City Unearthed in Turkey</h2>
+            <div class="">
+              <i class="fa fa-calendar-alt me-1"></i> May 25th 2020
+            </div>
+            <div class="News_line bg-primary my-2"></div>
+            <div class="">Archaeologists in Turkey have unearthed a fascinating new discovery - an ancient city believed
+              to be from the Roman era. The city is located in the southern province of Hatay and is thought to have
+              been a major trading center. This discovery is sure to excite history buffs and may become a new
+              attraction for tourists
+            </div>
+            <ul class="nav text-white row mt-5">
+              <li class="nav-item mx-2 bg-primary rounded-3 col-lg-2 col-6 my-2"><a href="#"
+                  class="text-white nav-link"><i class="fa fa-tag  text-white p-1"></i>Podcast</a></li>
+              <li class=" nav-item mx-2 bg-primary rounded-3 col-lg-2 col-6 my-2"><a href="#"
+                  class="text-white nav-link"><i class="fa fa-clock text-white p-1"></i>55 mins. </a></li>
+              <li class="nav-item mx-2 bg-primary rounded-3 col-lg-3 col-7 my-2 ">
+                <a href="#" class="text-white nav-link"><i class="fa fa-play text-white p-1"></i>Play Episode</a>
+              </li>
+            </ul>
+          </div>
+          <div class="news-image  col-lg-3 col-12">
+            <img src="images/news-4.png" alt="" class="col-12" height="100%">
+          </div>
+        </div>
+      </div>
+      <!-- card -->
+
+
+    </div><!-- container -->
+  </section> <!-- news -->
+
+  <section>
+    <h2 class="text-center h1" style="color: blueviolet;">Join Us</h2>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="card m-3 bg-light shadow  col-6 col-lg-2">
+          <div class="card-body text-info d-flex flex-column text-center">
+            <h3 class="card-title mb-4">Subscribe Now
+            </h3>
+            <i class="fa-brands fa-twitter h1 text-primary"></i>
+            <a href="#" target="_blank" class="card-link h4 text-info text-decoration-none ">Go to link</a>
+          </div>
+        </div>
+        <div class="card m-3 bg-light shadow col-6 col-lg-2 ">
+          <div class="card-body text-info d-flex flex-column text-center">
+            <h3 class="card-title mb-4">Follow
+            </h3>
+            <i class="fa-brands fa-whatsapp h1 text-success"></i>
+            <a href="" target="_blank" class="card-link h4 text-info text-decoration-none ">Go to link</a>
+          </div>
+        </div>
+        <div class="card m-3 bg-light shadow col-6 col-lg-2 ">
+          <div class="card-body text-info d-flex flex-column text-center">
+            <h3 class="card-title mb-4">Like the page
+            </h3>
+            <i class="fa-brands fa-linkedin h1 text-primary"></i>
+            <a href="" target="_blank" class="card-link h4 text-info text-decoration-none">Go to link</a>
+          </div>
+        </div>
+        <div class="card m-3 bg-light shadow col-6 col-lg-2">
+          <div class="card-body text-info d-flex flex-column text-center">
+            <h3 class="card-title mb-4">watch vedios
+            </h3>
+            <i class="fa-brands fa-instagram h1 text-danger"></i>
+            <a href="" target="_blank" class="card-link h4 text-info text-decoration-none ">Go to link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class=" text-white pb-5 shadow bg-info">
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <hr class=" border-top border-3 border-light my-3">
+          <h5><img src="images/pngegg.png" alt="good pic" class="logoicon rounded-circle" style="height: 80px;">&nbsp;
+            Good Company</h5>
+          <hr class="border-top border-3 border-light my-3">
+          <address>
+            <p class="h5">Tel : 000-000-000</p>
+            <p class="h5">Address : EGYPT</p>
+            <p class="h5">Fax : 000-000-000</p>
+          </address>
+        </div>
+        <div class="col-md-4">
+          <hr class="border-top border-3 border-light my-3">
+          <h5><img src="images/pngegg.png" alt="good pic" class="logoicon rounded-circle " style="height: 80px;">&nbsp;
+            Important links</h5>
+          <hr class="border-top border-3 border-light my-3">
+          <p class="h5"><a href="#" class="text-dark text-decoration-none">Visit Us</a></p>
+          <p class="h5"><a href="#" class="text-dark text-decoration-none">Take alook</a></p>
+          <p class="h5"><a href="#" class="text-dark text-decoration-none">Your health is more important</a></p>
+        </div>
+        <div class="col-md-4">
+          <hr class="border-top border-3 border-light my-3">
+          <h5><img src="images/pngegg.png" alt="good pic" class="logoicon rounded-circle" style="height: 80px;">&nbsp;
+            Vision</h5>
+          <hr class="border-top border-3 border-light my-3">
+          <p class="h5">Serveices for all </p>
+          <p class="h5">Provide best serveices</p>
+          <p class="h5">you will be better than before</p>
+        </div>
+      </div>
+    </div>
+    <hr class="border-top border-3 border-light my-3">
+    <span class="h5 text-center d-block text-light">Copyright © 2024 Esraa Shaban, Good Company. All
+      rights</span>
+  </footer>
+
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
